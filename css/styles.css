@@ -148,7 +148,7 @@ img{
     margin: 20px 20px 0 20px;
 }
 
-#header_h1{
+.header_h1{
     background-color: #D3D0CB;
     margin: 0 0 30px 0;
 }
@@ -619,6 +619,9 @@ input{
 
 /*315PX*/
 @media screen and (max-width: 315px){
+    h1{
+        font-size: 20px;
+    }
     .novedad_index{
         flex-direction: column;
         place-content: center;
