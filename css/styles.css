@@ -379,7 +379,7 @@ grid-area: footer;
 }
 
 #galeria{
-    grid-area: main2;
+    grid-area: main;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
@@ -430,15 +430,18 @@ grid-area: footer;
     background-size: 43px;
 }
 
-.preguntas_frecuentes{
+#preguntas_frecuentes{
+    grid-area: main;
     display: grid;
-    grid-template-columns: repeat(4, 300px);
     height: 80vh;
-    justify-content: center;
 }
 
-.preguntas_frecuentes div{
-    width: 275px;
+#preguntas_frecuentes-contenedor{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#preguntas_frecuentes-contenedor div{
     padding-left: 15px;
 }
 
@@ -450,6 +453,30 @@ grid-area: footer;
 .h3_preguntas p{
     margin-right: 5px;
 }
+
+@media screen and (max-width: 1000px){
+    #preguntas_frecuentes-contenedor{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        width: 100%;
+    }
+    .h3_preguntas p{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    #preguntas_frecuentes-contenedor{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .h3_preguntas p{
+        width: 250px;
+    }
+}
+
 
 /*EVENTOS*/
 #eventos{
