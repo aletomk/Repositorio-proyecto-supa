@@ -433,7 +433,6 @@ grid-area: footer;
 #preguntas_frecuentes{
     grid-area: main;
     display: grid;
-    height: 80vh;
 }
 
 #preguntas_frecuentes-contenedor{
