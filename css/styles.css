@@ -191,11 +191,10 @@ img{
     }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 800px){
     #noticias_index{
         display: grid;
         grid-template-columns: 1fr;
-
     }
 }
 
@@ -214,6 +213,8 @@ img{
     display: block;
     margin: 0 auto;
 }
+
+@media screen and (max-width: )
 
 #icono_noticias{
     background-image: url(../img/pc-icono.png);
