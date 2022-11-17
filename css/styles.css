@@ -286,8 +286,6 @@ section div {
     }
 }
 
-
-
 /* FOOTER */
 footer{
     background-color: #7F8080;
@@ -331,7 +329,7 @@ grid-area: footer;
     .buttons{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        witdh: 200px;
+        width: 200px;
     }
     .supa_footer{
         display: none;
