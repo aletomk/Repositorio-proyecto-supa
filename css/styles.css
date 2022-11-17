@@ -330,9 +330,10 @@ grid-area: footer;
     .buttons{
         display: grid;
         grid-template-columns: 1fr 1fr;
+        min-width: 300px;
     }
     .supa_footer{
-        display:none;
+        display: none;
     }
     .copy{
         margin-top: 20px;
