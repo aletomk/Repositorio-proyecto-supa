@@ -214,12 +214,10 @@ img{
     padding-right: 10px;
 }
 
-
-
 #icono_noticias{
     background-image: url(../img/pc-icono.png);
     background-repeat: no-repeat;
-    background-position: 765px;
+    background-position: 775px;
     background-size: 40px;
 }
 
@@ -244,10 +242,9 @@ section div {
     margin: 0 20px 0 20px;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 800px){
     #novedad_index{
             flex-direction: column;
-            width: 900px;
             place-content: center;
             margin: 0 auto; 
         }
@@ -259,7 +256,6 @@ section div {
 @media screen and (max-width: 315px){
     #novedad_index{
         flex-direction: column;
-        width: 900px;
         place-content: center;
         margin: 0 auto; 
     }
