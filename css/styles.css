@@ -189,6 +189,7 @@ img{
 #video-noticia{
     width: 600px;
     height: 330px;
+    margin: 0 auto;
 }
 
 #imagen-noticia{
@@ -228,45 +229,12 @@ section p{
 section div {
     margin: 10px;
 }
-/*
-.v-linea-noticias{
-    border-left: 3px solid #E7BB41;
-    height:100%;
-    margin-left: 615px;
-    position: absolute;
-}
-*/
+
 #novedad_index{
     display: grid;
     grid-template-columns: 1fr;
     margin: 0 20px 0 20px;
 }
-
-@media screen and (max-width: 800px){
-    #novedad_index{
-            flex-direction: column;
-            place-content: center;
-            margin: 0 auto; 
-        }
-        .mobile img{
-            display: none;
-        }
-    }
-
-@media screen and (max-width: 315px){
-    #novedad_index{
-        flex-direction: column;
-        place-content: center;
-        margin: 0 auto; 
-    }
-    .mobile{
-        flex-direction: column-reverse;
-    }
-    .mobile img{
-        display: none;
-    }
-}
-
 .mobile{
     display: flex;
 }
@@ -278,14 +246,47 @@ section div {
     margin-bottom: 10px;
 }
 
-.h3_distinto{
+.h3_novedad{
     text-align: justify;
     margin-top: 8px;
 }
 
-.h3_distinto p{
+.h3_novedad p{
     margin-right: 5px;
 }
+
+@media screen and (max-width: 800px){
+    #novedad_index{
+        flex-direction: column;
+        place-content: center;
+        margin: 0 auto; 
+    }
+    .mobile img{
+        display: none;
+    }
+    .h3_novedad{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 315px){
+    #novedad_index{
+        flex-direction: column;
+        place-content: center;
+        margin: 0 auto; 
+    }
+    .h3_novedad{
+        text-align: center;
+    }
+    .mobile{
+        flex-direction: column-reverse;
+    }
+    .mobile img{
+        display: none;
+    }
+}
+
+
 
 /* FOOTER */
 footer{
@@ -321,16 +322,16 @@ grid-area: footer;
 }
 
 .buttons{
-    min-width: 500px;
     display: flex;
     justify-content: space-around;
+    width: 500px;
 }
 
 @media screen and (max-width: 480px){
     .buttons{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        min-width: 300px;
+        witdh: 200px;
     }
     .supa_footer{
         display: none;
@@ -445,12 +446,12 @@ grid-area: footer;
     padding-left: 15px;
 }
 
-.h3_distinto{
+.h3_preguntas{
     text-align: justify;
     margin-top: 8px;
 }
 
-.h3_distinto p{
+.h3_preguntas p{
     margin-right: 5px;
 }
 
