@@ -183,17 +183,19 @@ img{
     grid-area: main1;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin: 0 20px 0 20px;
+}
+
+@media screen and (max-width: 1200px){
+    #noticias_index{
+        flex-direction: column;
+    }
 }
 
 @media screen and (max-width: 768px){
     #noticias_index{
-        flex-direction: column;
+        display: grid;
         grid-template-columns: 1fr;
-        text-align: center;
-        width: 900px;
-        place-content: center;
-        margin: 0 auto;    
+
     }
 }
 
