@@ -12,11 +12,10 @@ main{
 
 h1{
     font-family: 'Roboto Slab', serif;
-    font-size: 70px;
-    font-weight: bold;
+    font-size: 40px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    margin: 5px 0px 0px 10px;
+    text-align: center;
 }
 
 h2{
@@ -147,6 +146,11 @@ img{
 #main_index{
     grid-area: main;
     margin: 20px 20px 0 20px;
+}
+
+#header_h1{
+    background-color: #D3D0CB;
+    margin: 0 0 30px 0;
 }
 
 /* SECTION */
@@ -337,6 +341,7 @@ grid-area: footer;
 #eventos{
     grid-area: main;
     display: grid;
+    margin: 20px 20px 0 20px;
 }
 
 .eventos_div{
