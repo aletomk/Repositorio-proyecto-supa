@@ -377,36 +377,56 @@ grid-area: footer;
 
 /*REGISTRO*/
 
+input{
+    margin-left: 10px;
+}
+
+#formulario{
+    grid-area: main;
+    display: grid;
+    margin: 20px 20px 0 20px;
+}
+
+#siguiente{
+    margin-bottom: 20px;
+}
+
+.formulario_section{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+.h3_registro{
+    text-align: justify;
+    margin: 8px 0 0 0;
+}
+
 .icono_registro{
     background-image: url(../img/registro-icono.png);
     background-repeat: no-repeat;
-    background-position: 885px;
+    background-position: 895px;
     background-size: 38px;
 }
 
 .icono_usuario{
     background-image: url(../img/usuario-icono.png);
     background-repeat: no-repeat;
-    background-position: 260px;
+    background-position: 290px;
     background-size: 38px;
+    margin-bottom: 15px;
 }
 
 .icono_nuevo-usuario{
     background-image: url(../img/nuevo_usuario-icono.png);
     background-repeat: no-repeat;
-    background-position: 265px;
+    background-position: 275px;
     background-size: 43px;
+    margin-bottom: 15px;
 }
 
-.formulario{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    margin-top: 40px;
-}
-
-.siguiente{
-    margin-bottom: 20px;
+.row{
+    flex-wrap: nowrap;
 }
 
 /*------------MEDIA QUERIES------------*/
@@ -443,6 +463,14 @@ grid-area: footer;
     }
     .h3_preguntas p{
         width: 400px;
+    }
+    .formulario_section{
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 40px;
+    }
+    .h3_registro{
+        text-align: center;
     }
 }
 
@@ -506,6 +534,16 @@ grid-area: footer;
     .logo_supa{
         margin-left: 30px;
     }
+    .formulario_section{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .h3_registro{
+        text-align: center;
+    }
+    .row{
+        flex-wrap: wrap;
+    }
 }
 
 /*550PX*/
@@ -552,6 +590,22 @@ grid-area: footer;
     }
     .copy{
         margin-top: 20px;
+    }
+}
+
+/*380PX*/
+@media screen and (max-width: 380px){
+    .formulario_section{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 250px;
+        margin: 0 auto;
+    }
+    .h3_registro{
+        text-align: center;
+    }
+    .row{
+        flex-wrap: wrap;
     }
 }
 
