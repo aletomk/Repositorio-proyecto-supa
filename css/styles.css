@@ -364,17 +364,15 @@ grid-area: footer;
 /*QUIENES SOMOS*/
 
 #quienes_somos{
-    grid-area: main1;
-    display: grid;
+    grid-area: main;
     margin: 0 20px 0 20px;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 800px){
     #quienes_somos{
-        flex-direction: column;
-        width: 900px;
         place-content: center;
         margin: 0 auto; 
+        margin: 0 10px 0 10px;
     }
 }
 
@@ -389,7 +387,7 @@ grid-area: footer;
     justify-items: center;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 800px){
     #galeria{
         display: flex;
         flex-direction: column;
