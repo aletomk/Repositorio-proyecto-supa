@@ -191,12 +191,7 @@ img{
     }
 }
 
-@media screen and (max-width: 800px){
-    #noticias_index{
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-}
+
 
 #noticia1{
     padding-right: 10px;
@@ -213,8 +208,6 @@ img{
     display: block;
     margin: 0 auto;
 }
-
-@media screen and (max-width: )
 
 #icono_noticias{
     background-image: url(../img/pc-icono.png);
