@@ -178,6 +178,7 @@ img{
 /*MAIN*/
 #main_index{
     grid-area: main;
+    margin: 20px 20px 0 20px;
 }
 
 /* SECTION */
@@ -363,15 +364,7 @@ grid-area: footer;
 
 #quienes_somos{
     grid-area: main;
-    margin: 0 20px 0 20px;
-}
-
-@media screen and (max-width: 800px){
-    #quienes_somos{
-        place-content: center;
-        margin: 0 auto; 
-        margin: 0 10px 0 10px;
-    }
+    margin: 20px 20px 0 20px;
 }
 
 #quienes_somos p{
@@ -385,7 +378,17 @@ grid-area: footer;
     justify-items: center;
 }
 
+#galeria img{
+    width: 250px;
+    height: 250px;
+}
+
 @media screen and (max-width: 800px){
+    #quienes_somos{
+        place-content: center;
+        margin: 0 auto; 
+        margin: 0 10px 0 10px;
+    }
     #galeria{
         display: flex;
         flex-direction: column;
@@ -433,6 +436,7 @@ grid-area: footer;
 #preguntas_frecuentes{
     grid-area: main;
     display: grid;
+    margin: 20px 20px 0 20px;
 }
 
 #preguntas_frecuentes-contenedor{
@@ -453,7 +457,7 @@ grid-area: footer;
     margin-right: 5px;
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1024px){
     #preguntas_frecuentes-contenedor{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -465,7 +469,7 @@ grid-area: footer;
     }
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 512px){
     #preguntas_frecuentes-contenedor{
         display: grid;
         grid-template-columns: 1fr;
@@ -476,21 +480,33 @@ grid-area: footer;
     }
 }
 
-
 /*EVENTOS*/
 #eventos{
-    display: flex;
+    grid-area: main;
+    display: grid;
+}
+
+#eventos_div{
+    display: grid;
+    grid-template-columns: 1.8fr 1.2fr;
+}
+
+#calendario_div{
+    display: grid;
+    justify-content: center;
+    align-content: center;
 }
 
 #eventos_calendario{
     max-width: 100%;
-    width: 400px;   
+    border: 1px solid #777; 
+    width: 400px;
+    height: 350px;
 }
 
 #texto_eventos{
     padding-left: 20px;
     text-align: left;
-    height: 350px;
 }
 
 #h3_eventos{
@@ -504,6 +520,42 @@ grid-area: footer;
     background-repeat: no-repeat;
     background-position: 785px;
     background-size: 40px;
+}
+
+@media screen and (max-width: 900px){
+    #eventos_div{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1.8fr 1.2fr;
+        justify-items: center;
+    }
+    #h3_eventos{
+        text-align: center;
+        margin-left: 0;
+    }
+    #texto_eventos{
+        padding-left: 0;
+    }
+
+}
+
+@media screen and (max-width: 550px){
+    #eventos_div{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        justify-items: center;
+    }
+    #eventos_calendario{
+        display: none;
+    }
+    #h3_eventos{
+        text-align: center;
+        margin-left: 0;
+    }
+    #texto_eventos{
+        padding-left: 0;
+    }
 }
 
 /*REGISTRO*/
