@@ -9,7 +9,6 @@
 
 main{
     margin: 0 auto;
-    margin-top: 20px;
 }
 
 h1{
@@ -72,6 +71,7 @@ img{
 /* GRILLA PRINCIPAL */
 #grilla_index{
     display: grid;
+    justify-content: center;
     grid-template-areas: 
     "header"
     "main1"
