@@ -185,18 +185,6 @@ img{
     grid-template-columns: repeat(2, 1fr);
 }
 
-@media screen and (max-width: 1200px){
-    #noticias_index{
-        flex-direction: column;
-    }
-}
-
-
-
-#noticia1{
-    padding-right: 10px;
-}
-
 #video-noticia{
     width: 600px;
     height: 330px;
@@ -208,6 +196,24 @@ img{
     display: block;
     margin: 0 auto;
 }
+
+@media screen and (max-width: 1200px){
+    #noticias_index{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    #video-noticia, #imagen-noticia{
+        max-width: 100%;
+        display: grid;
+        justify-content: center;
+    }
+}
+
+#noticia1{
+    padding-right: 10px;
+}
+
+
 
 #icono_noticias{
     background-image: url(../img/pc-icono.png);
