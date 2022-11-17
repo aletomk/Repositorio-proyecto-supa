@@ -71,14 +71,11 @@ img{
 /* GRILLA PRINCIPAL */
 #grilla_index{
     display: grid;
-    justify-content: center;
     grid-template-areas: 
-    "header"
-    "main1"
-    "main2"
-    "footer";
-
-    grid-template-columns: 1fr;
+    "header header header"
+    "main main main"
+    "footer footer footer";
+    grid-template-columns: repeat(3, 1fr);
     background-color: #FAF9F5;
     margin: 0;
     padding: 0;
@@ -166,7 +163,6 @@ img{
     color: #E7BB41;
 }
 
-
 #icono_nav-registro{
     width: 30px;
     height: 30px;
@@ -179,11 +175,15 @@ img{
     margin-top: 10px
 }
 
+/*MAIN*/
+#main_index{
+    grid-area: main;
+}
+
 /* SECTION */
 #noticias_index{
-    grid-area: main1;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;
 }
 
 #video-noticia{
@@ -237,8 +237,8 @@ section div {
 }
 */
 #novedad_index{
-    grid-area: main2;
     display: grid;
+    grid-template-columns: 1fr;
     margin: 0 20px 0 20px;
 }
 
