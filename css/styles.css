@@ -326,7 +326,7 @@ grid-area: footer;
     justify-content: space-around;
 }
 
-@media screen and (max-width: 315px){
+@media screen and (max-width: 480px){
     .buttons{
         display: grid;
         grid-template-columns: 1fr 1fr;
