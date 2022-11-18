@@ -187,7 +187,7 @@ section div {
 .icono_noticias{
     background-image: url(../img/pc-icono.png);
     background-repeat: no-repeat;
-    background-position: 775px;
+    background-position: 800px;
     background-size: 40px;
 }
 
@@ -301,7 +301,7 @@ grid-area: footer;
 .icono_quienes-somos{
     background-image: url(../img/personas-icono.png);
     background-repeat: no-repeat;
-    background-position: 740px;
+    background-position: 800px;
     background-size: 40px;
 }
 
@@ -315,7 +315,7 @@ grid-area: footer;
 .icono_preguntas{
     background-image: url(../img/preguntas-icono.png);
     background-repeat: no-repeat;
-    background-position: 810px;
+    background-position: 850px;
     background-size: 45px;
 }
 
@@ -376,7 +376,7 @@ grid-area: footer;
 .icono_eventos{
     background-image: url(../img/calendario-icono.png);
     background-repeat: no-repeat;
-    background-position: 785px;
+    background-position: 830px;
     background-size: 40px;
 }
 
@@ -410,7 +410,7 @@ input{
 .icono_registro{
     background-image: url(../img/registro-icono.png);
     background-repeat: no-repeat;
-    background-position: 895px;
+    background-position: 915px;
     background-size: 38px;
 }
 
