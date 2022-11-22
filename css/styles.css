@@ -167,15 +167,15 @@ section div {
     grid-template-columns: 1fr 1fr;
 }
 
-.video-noticia{
+.mapa-noticia{
     width: 600px;
     height: 330px;
     margin: 0 auto;
 }
 
 .imagen-noticia{
-    width: 450px;
-    height: 330px;
+    width: 470px;
+    height: 350px;
     display: block;
     margin: 0 auto;
 }
@@ -442,7 +442,7 @@ input{
         display: grid;
         grid-template-columns: 1fr;
     }
-    .video-noticia, .imagen-noticia{
+    .mapa-noticia, .imagen-noticia{
         max-width: 100%;
         display: grid;
         justify-content: center;
