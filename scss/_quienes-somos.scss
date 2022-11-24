@@ -1,0 +1,27 @@
+#quienes_somos{
+    grid-area: main;
+    margin: 20px 20px 0 20px;
+
+    p{
+        margin-top: 20px;
+    }
+}
+
+.galeria{
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+
+    img{
+    width: 250px;
+    height: 250px;    
+    }
+}
+
+.icono_quienes-somos{
+    background-image: url(../img/personas-icono.png);
+    background-repeat: no-repeat;
+    background-position: 800px;
+    background-size: 40px;
+}

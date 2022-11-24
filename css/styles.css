@@ -1,4 +1,30 @@
 @charset "UTF-8";
+#quienes_somos {
+  grid-area: main;
+  margin: 20px 20px 0 20px;
+}
+#quienes_somos p {
+  margin-top: 20px;
+}
+
+.galeria {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+.galeria img {
+  width: 250px;
+  height: 250px;
+}
+
+.icono_quienes-somos {
+  background-image: url(../img/personas-icono.png);
+  background-repeat: no-repeat;
+  background-position: 800px;
+  background-size: 40px;
+}
+
 /* PSEUDOCLASES */
 ::selection {
   background: #E7BB41;
@@ -269,35 +295,6 @@ footer {
 }
 
 /*-------------------------PAGES-------------------------*/
-/*QUIENES SOMOS*/
-#quienes_somos {
-  grid-area: main;
-  margin: 20px 20px 0 20px;
-}
-
-#quienes_somos p {
-  margin-top: 10px;
-}
-
-.galeria {
-  grid-area: main;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-items: center;
-}
-
-.galeria img {
-  width: 250px;
-  height: 250px;
-}
-
-.icono_quienes-somos {
-  background-image: url(../img/personas-icono.png);
-  background-repeat: no-repeat;
-  background-position: 800px;
-  background-size: 40px;
-}
-
 /*PREGUNTAS FRECUENTES*/
 #preguntas_frecuentes {
   grid-area: main;
