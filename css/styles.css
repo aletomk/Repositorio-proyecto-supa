@@ -1,10 +1,11 @@
 @charset "UTF-8";
+/*VARIABLE PARA COLORES*/ /*QUIENES SOMOS*/
 #quienes_somos {
   grid-area: main;
   margin: 20px 20px 0 20px;
 }
 #quienes_somos p {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .galeria {

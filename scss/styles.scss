@@ -1,3 +1,4 @@
+@import "variables";
 @import "quienes-somos";
 @import "preguntas-frecuentes";
 @import "eventos";
@@ -80,7 +81,7 @@ img{
     "main main main"
     "footer footer footer";
     grid-template-columns: repeat(3, 1fr);
-    background-color: #FAF9F5;
+    background-color: $bg-body;
     margin: 0;
     padding: 0;
     max-width: 100%;
@@ -92,7 +93,7 @@ img{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: #76797A;
+    background-color: $bg-header;
     border-bottom: 4px solid #E7BB41;
     margin-bottom: 10px;
 }
@@ -224,7 +225,7 @@ section div {
 
 /* FOOTER */
 footer{
-    background-color: #7F8080;
+    background-color: $bg-footer;
     display:flex;
     flex-direction: column;
     top: 0;
