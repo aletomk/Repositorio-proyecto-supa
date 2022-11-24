@@ -1,0 +1,639 @@
+/* PSEUDOCLASES */
+
+::selection{
+    background: #E7BB41;
+}
+
+/* RESET GENÉRICO */
+
+main{
+    margin: 0 auto;
+}
+
+h1{
+    font-family: 'Roboto Slab', serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+h2{
+    font-family: 'Rubik', sans-serif;
+    font-size: 38px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+    background-color: #E7E5DF;
+    border: 3px solid #E7BB41;
+    margin-bottom: 5px;
+}
+
+h3{
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+}
+
+p{
+    font-family: 'Aleo', serif;
+    line-height: 1.4;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: black;
+}
+
+ul{
+    list-style: none;
+}
+
+nav{
+    display: flex;
+    margin-top: auto;
+}
+
+img{
+    max-width: 100%;
+}
+
+/* DESKTOP FIRST */
+
+/* GRILLA PRINCIPAL */
+#grilla_index{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer";
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #FAF9F5;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
+/* HEADER */
+#header_index{
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #76797A;
+    border-bottom: 4px solid #E7BB41;
+    margin-bottom: 10px;
+}
+
+#navegacion{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+#navegacion li{
+    padding: 5px 5px; 
+    margin: 0 5px 4px 0;
+    /*border: 2px solid black;*/
+    border-color: black;
+    border-width: 1.5px;
+    border-style: solid;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#navegacion li:hover{
+    background-color: #E7BB41;
+}
+
+#navegacion a{
+    padding: 10px 5px;
+	text-indent: 5px;
+	letter-spacing: 1px;
+	
+    font-weight: bold;
+}
+
+#registro_boton{
+    font-size: 17px;
+    font-weight: bold;
+    color: black;
+    border: 1.5px solid black;
+}
+
+#registro_boton:hover{
+    color: #E7BB41;
+}
+
+#icono_nav-registro{
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+.logo_supa{
+    width: 200px;
+    height: 60px;
+    margin-top: 10px
+}
+
+/*MAIN*/
+#main_index{
+    grid-area: main;
+    margin: 20px 20px 0 20px;
+}
+
+.header_h1{
+    background-color: #D3D0CB;
+    margin: 0 0 30px 0;
+}
+
+/* SECTION */
+section p{
+    text-align: justify;
+}
+
+section div {
+    margin: 10px;
+}
+
+.noticias_index{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.mapa-noticia{
+    width: 600px;
+    height: 330px;
+    margin: 0 auto;
+}
+
+.imagen-noticia{
+    width: 470px;
+    height: 350px;
+    display: block;
+    margin: 0 auto;
+}
+
+.noticia1{
+    padding-right: 10px;
+}
+
+.icono_noticias{
+    background-image: url(../img/pc-icono.png);
+    background-repeat: no-repeat;
+    background-position: 800px;
+    background-size: 40px;
+}
+
+.novedad_index{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 20px 0 20px;
+}
+.mobile{
+    display: flex;
+}
+
+.mobile img{
+    width: 350px;
+    height: 370px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.h3_novedad{
+    text-align: justify;
+    margin-top: 8px;
+}
+
+.h3_novedad p{
+    margin-right: 5px;
+}
+
+/* FOOTER */
+footer{
+    background-color: #7F8080;
+    display:flex;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    margin-top: 50px;
+    border-top: 3px solid #E7BB41;
+    align-items: center;
+}
+
+#footer_index{
+grid-area: footer;
+}
+
+.redes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer_copy{
+    text-align: center;
+    color: #FAF9F5;
+    background-color: #474C4E;
+    width: 100%;
+    height: 70px;
+    padding-bottom: 8px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+}
+
+.buttons a{
+    font-size: 24px;
+}
+
+.coloricon-redes{
+    color: #FAF9F5;
+}
+
+.coloricon-redes:hover{
+    color: #E7BB41;
+}
+
+.supa_footer{
+    width: 700px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+/*-------------------------PAGES-------------------------*/
+
+/*QUIENES SOMOS*/
+
+#quienes_somos{
+    grid-area: main;
+    margin: 20px 20px 0 20px;
+}
+
+#quienes_somos p{
+    margin-top: 10px;
+}
+
+.galeria{
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+
+.galeria img{
+    width: 250px;
+    height: 250px;
+}
+
+.icono_quienes-somos{
+    background-image: url(../img/personas-icono.png);
+    background-repeat: no-repeat;
+    background-position: 800px;
+    background-size: 40px;
+}
+
+/*PREGUNTAS FRECUENTES*/
+#preguntas_frecuentes{
+    grid-area: main;
+    display: grid;
+    margin: 20px 20px 0 20px;
+}
+
+.icono_preguntas{
+    background-image: url(../img/preguntas-icono.png);
+    background-repeat: no-repeat;
+    background-position: 850px;
+    background-size: 45px;
+}
+
+.preguntas_frecuentes-contenedor{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.preguntas_frecuentes-contenedor div{
+    padding-left: 15px;
+}
+
+.h3_preguntas{
+    text-align: justify;
+    margin-top: 7px;
+}
+
+.h3_preguntas p{
+    margin-right: 5px;
+}
+
+/*EVENTOS*/
+#eventos{
+    grid-area: main;
+    display: grid;
+    margin: 20px 20px 0 20px;
+}
+
+.eventos_div{
+    display: grid;
+    grid-template-columns: 1.8fr 1.2fr;
+}
+
+.calendario_div{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.eventos_calendario{
+    max-width: 100%;
+    border: 1px solid #777; 
+    width: 400px;
+    height: 350px;
+}
+
+.texto_eventos{
+    padding-left: 20px;
+    text-align: left;
+}
+
+.h3_eventos{
+    text-align: justify;
+    margin-left: 29px;
+    margin-top: 8px;
+}
+
+.icono_eventos{
+    background-image: url(../img/calendario-icono.png);
+    background-repeat: no-repeat;
+    background-position: 830px;
+    background-size: 40px;
+}
+
+/*REGISTRO*/
+
+input{
+    margin-left: 10px;
+}
+
+#formulario{
+    grid-area: main;
+    display: grid;
+    margin: 20px 20px 0 20px;
+}
+
+#siguiente{
+    margin-bottom: 20px;
+}
+
+.formulario_section{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+.h3_registro{
+    text-align: justify;
+    margin: 8px 0 0 0;
+}
+
+.icono_registro{
+    background-image: url(../img/registro-icono.png);
+    background-repeat: no-repeat;
+    background-position: 915px;
+    background-size: 38px;
+}
+
+.icono_usuario{
+    background-image: url(../img/usuario-icono.png);
+    background-repeat: no-repeat;
+    background-position: 290px;
+    background-size: 38px;
+    margin-bottom: 15px;
+}
+
+.icono_nuevo-usuario{
+    background-image: url(../img/nuevo_usuario-icono.png);
+    background-repeat: no-repeat;
+    background-position: 275px;
+    background-size: 43px;
+    margin-bottom: 15px;
+}
+
+.row{
+    flex-wrap: nowrap;
+}
+
+/*------------MEDIA QUERIES------------*/
+
+/*1200 PX*/
+@media screen and (max-width: 1200px){
+    .noticias_index{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .mapa-noticia, .imagen-noticia{
+        max-width: 100%;
+        display: grid;
+        justify-content: center;
+    }
+}
+
+/*1024 PX*/
+@media screen and (max-width: 1024px){
+    #header_index{
+        flex-direction: column;
+    }
+    #navegacion{
+        margin-bottom: 5px;
+    }
+    #registro_boton{
+        margin-bottom: 10px;
+    }
+    .preguntas_frecuentes-contenedor{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        width: 100%;
+    }
+    .h3_preguntas p{
+        width: 400px;
+    }
+    .formulario_section{
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 40px;
+    }
+    .h3_registro{
+        text-align: center;
+    }
+}
+
+/*900PX*/
+@media screen and (max-width: 900px){
+    .eventos_div{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1.8fr 1.2fr;
+        justify-items: center;
+    }
+    .h3_eventos{
+        text-align: center;
+        margin-left: 0;
+    }
+    .texto_eventos{
+        padding-left: 0;
+    }
+}
+
+/*800PX*/
+@media screen and (max-width: 800px){
+    .novedad_index{
+        flex-direction: column;
+        place-content: center;
+        margin: 0 auto; 
+    }
+    .mobile img{
+        display: none;
+    }
+    .h3_novedad{
+        text-align: center;
+    }
+    #quienes_somos{
+        place-content: center;
+        margin: 0 auto; 
+        margin: 0 10px 0 10px;
+    }
+    .galeria{
+        display: flex;
+        flex-direction: column;
+        align-items: center;      
+    }
+}
+
+/*600PX*/
+@media screen and (max-width: 600px){
+    #navegacion{
+        flex-direction: column;
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+    #registro_boton{
+        margin-bottom: 10px;
+        margin-left: 25px;
+    }
+    nav{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .logo_supa{
+        margin-left: 30px;
+    }
+    .formulario_section{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .h3_registro{
+        text-align: center;
+    }
+    .row{
+        flex-wrap: wrap;
+    }
+}
+
+/*550PX*/
+@media screen and (max-width: 550px){
+    .eventos_div{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        justify-items: center;
+    }
+    .eventos_calendario{
+        display: none;
+    }
+    .h3_eventos{
+        text-align: center;
+        margin-left: 0;
+    }
+    .texto_eventos{
+        padding-left: 0;
+    }
+}
+
+/*512PX*/
+@media screen and (max-width: 512px){
+    .preguntas_frecuentes-contenedor{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .h3_preguntas p{
+        width: 250px;
+    }
+}
+
+/*480PX*/
+@media screen and (max-width: 480px){
+    h1{
+        font-size: 25px;
+    }
+    .buttons{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 200px;
+    }
+    .supa_footer{
+        display: none;
+    }
+    .copy{
+        margin-top: 20px;
+    }
+}
+
+/*380PX*/
+@media screen and (max-width: 380px){
+    .formulario_section{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 250px;
+        margin: 0 auto;
+    }
+    .h3_registro{
+        text-align: center;
+    }
+    .row{
+        flex-wrap: wrap;
+    }
+}
+
+/*315PX*/
+@media screen and (max-width: 315px){
+    h1{
+        font-size: 20px;
+    }
+    .novedad_index{
+        flex-direction: column;
+        place-content: center;
+        margin: 0 auto; 
+    }
+    .h3_novedad{
+        text-align: center;
+    }
+    .mobile{
+        flex-direction: column-reverse;
+    }
+    .mobile img{
+        display: none;
+    }
+}
