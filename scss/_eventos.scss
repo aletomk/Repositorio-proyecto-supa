@@ -1,0 +1,36 @@
+.eventos_div{
+    display: grid;
+    grid-template-columns: 1.8fr 1.2fr;
+}
+
+.calendario_div{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.eventos_calendario{
+    max-width: 100%;
+    border: 1px solid #777; 
+    width: 400px;
+    height: 350px;
+}
+
+.texto_eventos{
+    padding-left: 20px;
+    text-align: left;
+}
+
+.h3_eventos{
+    text-align: justify;
+    margin-left: 29px;
+    margin-top: 8px;
+}
+
+.icono_eventos{
+    background-image: url(../img/calendario-icono.png);
+    background-repeat: no-repeat;
+    background-position: 830px;
+    background-size: 40px;
+}
+

@@ -1,0 +1,46 @@
+input{
+    margin-left: 10px;
+}
+
+#siguiente{
+    margin-bottom: 20px;
+}
+
+.formulario_section{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+.h3_registro{
+    text-align: justify;
+    margin: 8px 0 0 0;
+}
+
+.icono_registro{
+    background-image: url(../img/registro-icono.png);
+    background-repeat: no-repeat;
+    background-position: 915px;
+    background-size: 38px;
+}
+
+.icono_usuario{
+    background-image: url(../img/usuario-icono.png);
+    background-repeat: no-repeat;
+    background-position: 290px;
+    background-size: 38px;
+    margin-bottom: 15px;
+}
+
+.icono_nuevo-usuario{
+    background-image: url(../img/nuevo_usuario-icono.png);
+    background-repeat: no-repeat;
+    background-position: 275px;
+    background-size: 43px;
+    margin-bottom: 15px;
+}
+
+.row{
+    flex-wrap: nowrap;
+}
+

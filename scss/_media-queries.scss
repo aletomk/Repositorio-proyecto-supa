@@ -1,0 +1,201 @@
+/*1200 PX*/
+@media screen and (max-width: 1200px){
+    .noticias_index{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .mapa-noticia, .imagen-noticia{
+        max-width: 100%;
+        display: grid;
+        justify-content: center;
+    }
+}
+
+/*1024 PX*/
+@media screen and (max-width: 1024px){
+    #header_index{
+        flex-direction: column;
+    }
+    #navegacion{
+        margin-bottom: 5px;
+    }
+    #registro_boton{
+        margin-bottom: 10px;
+    }
+    .preguntas_frecuentes-contenedor{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        width: 100%;
+    }
+    .h3_preguntas p{
+        width: 400px;
+    }
+    .formulario_section{
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 40px;
+    }
+    .h3_registro{
+        text-align: center;
+    }
+}
+
+/*900PX*/
+@media screen and (max-width: 900px){
+    .eventos_div{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1.8fr 1.2fr;
+        justify-items: center;
+    }
+    .h3_eventos{
+        text-align: center;
+        margin-left: 0;
+    }
+    .texto_eventos{
+        padding-left: 0;
+    }
+}
+
+/*800PX*/
+@media screen and (max-width: 800px){
+    .novedad_index{
+        flex-direction: column;
+        place-content: center;
+        margin: 0 auto; 
+    }
+    .mobile img{
+        display: none;
+    }
+    .h3_novedad{
+        text-align: center;
+    }
+    #quienes_somos{
+        place-content: center;
+        margin: 0 auto; 
+        margin: 0 10px 0 10px;
+    }
+    .galeria{
+        display: flex;
+        flex-direction: column;
+        align-items: center;      
+    }
+}
+
+/*600PX*/
+@media screen and (max-width: 600px){
+    #navegacion{
+        flex-direction: column;
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+    #registro_boton{
+        margin-bottom: 10px;
+        margin-left: 25px;
+    }
+    nav{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .logo_supa{
+        margin-left: 30px;
+    }
+    .formulario_section{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .h3_registro{
+        text-align: center;
+    }
+    .row{
+        flex-wrap: wrap;
+    }
+}
+
+/*550PX*/
+@media screen and (max-width: 550px){
+    .eventos_div{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        justify-items: center;
+    }
+    .eventos_calendario{
+        display: none;
+    }
+    .h3_eventos{
+        text-align: center;
+        margin-left: 0;
+    }
+    .texto_eventos{
+        padding-left: 0;
+    }
+}
+
+/*512PX*/
+@media screen and (max-width: 512px){
+    .preguntas_frecuentes-contenedor{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .h3_preguntas p{
+        width: 250px;
+    }
+}
+
+/*480PX*/
+@media screen and (max-width: 480px){
+    h1{
+        font-size: 25px;
+    }
+    .buttons{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 200px;
+    }
+    .supa_footer{
+        display: none;
+    }
+    .copy{
+        margin-top: 20px;
+    }
+}
+
+/*380PX*/
+@media screen and (max-width: 380px){
+    .formulario_section{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 250px;
+        margin: 0 auto;
+    }
+    .h3_registro{
+        text-align: center;
+    }
+    .row{
+        flex-wrap: wrap;
+    }
+}
+
+/*315PX*/
+@media screen and (max-width: 315px){
+    h1{
+        font-size: 20px;
+    }
+    .novedad_index{
+        flex-direction: column;
+        place-content: center;
+        margin: 0 auto; 
+    }
+    .h3_novedad{
+        text-align: center;
+    }
+    .mobile{
+        flex-direction: column-reverse;
+    }
+    .mobile img{
+        display: none;
+    }
+}
