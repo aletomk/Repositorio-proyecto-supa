@@ -568,6 +568,9 @@ input {
   .copy {
     margin-top: 20px;
   }
+  .imagen-noticia {
+    height: 250px;
+  }
 }
 /*380PX*/
 @media screen and (max-width: 380px) {
