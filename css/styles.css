@@ -262,6 +262,12 @@ section div {
   width: 600px;
 }
 
+.carousel {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
 .noticia1 {
   padding-right: 10px;
 }
@@ -562,7 +568,7 @@ input {
     grid-template-columns: 1fr 1fr;
     width: 200px;
   }
-  .supa_footer {
+  .supa_footer, .carousel-control-prev {
     display: none;
   }
   .copy {

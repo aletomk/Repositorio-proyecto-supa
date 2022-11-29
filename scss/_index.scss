@@ -20,9 +20,17 @@ section div{
     height: 350px;
     margin: 0 auto;
 
-}.mapa-noticia{
+}
+
+.mapa-noticia{
     @extend .imagen-noticia;
     width: 600px;
+}
+
+.carousel{
+    display: flex;
+    text-align: center;
+    justify-content: center;
 }
 
 .noticia1{
