@@ -23,10 +23,15 @@
     margin-bottom: 10px;
 }
 
-/*MAIN*/
-#main_index{
+//MIXIN
+@mixin estilos-layout{
     grid-area: main;
     margin: 20px 20px 0 20px;
+}
+
+/*MAIN*/
+#main_index{
+    @include estilos-layout;
 }
 
 /*FOOTER*/
@@ -34,23 +39,38 @@
     grid-area: footer;
 }
 
-/*PREGUNTAS FRECUENTES*/
-#preguntas_frecuentes{
+/*QUIENES SOMOS*/
+#quienes_somos{
+    @include estilos-layout;
+}
+
+.galeria{
     grid-area: main;
     display: grid;
-    margin: 20px 20px 0 20px;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+
+/*PREGUNTAS FRECUENTES*/
+#preguntas_frecuentes{
+    @include estilos-layout;
+    display: grid;
 }
 
 /*EVENTOS*/
 #eventos{
-    grid-area: main;
+    @include estilos-layout;
     display: grid;
-    margin: 20px 20px 0 20px;
 }
 
 /*REGISTRO*/
 #formulario{
-    grid-area: main;
+    @include estilos-layout;
     display: grid;
-    margin: 20px 20px 0 20px;
+}
+
+.formulario_section{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
 }

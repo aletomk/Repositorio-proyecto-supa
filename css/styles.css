@@ -195,25 +195,44 @@ footer {
   grid-area: footer;
 }
 
+/*QUIENES SOMOS*/
+#quienes_somos {
+  grid-area: main;
+  margin: 20px 20px 0 20px;
+}
+
+.galeria {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+
 /*PREGUNTAS FRECUENTES*/
 #preguntas_frecuentes {
   grid-area: main;
-  display: grid;
   margin: 20px 20px 0 20px;
+  display: grid;
 }
 
 /*EVENTOS*/
 #eventos {
   grid-area: main;
-  display: grid;
   margin: 20px 20px 0 20px;
+  display: grid;
 }
 
 /*REGISTRO*/
 #formulario {
   grid-area: main;
-  display: grid;
   margin: 20px 20px 0 20px;
+  display: grid;
+}
+
+.formulario_section {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr;
 }
 
 .header_h1 {
@@ -234,15 +253,13 @@ section div {
   grid-template-columns: 1fr 1fr;
 }
 
-.mapa-noticia {
-  width: 600px;
-  height: 330px;
+.imagen-noticia, .mapa-noticia {
+  height: 350px;
   margin: 0 auto;
 }
 
-.imagen-noticia {
-  height: 350px;
-  margin: 0 auto;
+.mapa-noticia {
+  width: 600px;
 }
 
 .noticia1 {
@@ -280,21 +297,10 @@ section div {
   margin-right: 5px;
 }
 
-/*QUIENES SOMOS*/
-#quienes_somos {
-  grid-area: main;
-  margin: 20px 20px 0 20px;
-}
 #quienes_somos p {
   margin-top: 10px;
 }
 
-.galeria {
-  grid-area: main;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-items: center;
-}
 .galeria img {
   width: 250px;
   height: 250px;
@@ -372,12 +378,6 @@ input {
 
 #siguiente {
   margin-bottom: 20px;
-}
-
-.formulario_section {
-  display: grid;
-  justify-items: center;
-  grid-template-columns: 1fr 1fr;
 }
 
 .h3_registro {
@@ -568,7 +568,7 @@ input {
   .copy {
     margin-top: 20px;
   }
-  .imagen-noticia {
+  .imagen-noticia, .mapa-noticia {
     height: 250px;
   }
 }

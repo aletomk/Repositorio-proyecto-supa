@@ -16,15 +16,13 @@ section div{
     grid-template-columns: 1fr 1fr;
 }
 
-.mapa-noticia{
-    width: 600px;
-    height: 330px;
-    margin: 0 auto;
-}
-
 .imagen-noticia{
     height: 350px;
     margin: 0 auto;
+
+}.mapa-noticia{
+    @extend .imagen-noticia;
+    width: 600px;
 }
 
 .noticia1{
