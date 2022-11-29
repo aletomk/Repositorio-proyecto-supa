@@ -10,6 +10,7 @@
     <!-- CSS BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <!-- ICONOS -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/supa.ico">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <!-- ANIMACIONES -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
@@ -56,10 +57,8 @@
                     Las charlas y novedades serán grabadas y subidas posteriormente para todo aquel que no haya podido asistir.
                     </p>
                 </article>
-                <div><iframe class="mapa-noticia" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13134.523993727506!2d-58.401626492187475!3d-34.61349130000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccadf7519f753%3A0x5e1f10ca2eb60676!2zVW5pw7NuIEluZm9ybcOhdGljYQ!5e0!3m2!1ses!2sar!4v1669126352637!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
-                
+                <div><iframe class="mapa-noticia" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13134.523993727506!2d-58.401626492187475!3d-34.61349130000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccadf7519f753%3A0x5e1f10ca2eb60676!2zVW5pw7NuIEluZm9ybcOhdGljYQ!5e0!3m2!1ses!2sar!4v1669126352637!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>               
             </div>
-            <!--<div class="v-linea-noticias"></div>-->
             <div>
                 <h3>Feria de Tecnologías para la Inclusión</h3>
                 <article>  
@@ -68,7 +67,40 @@
                     Los proyectos reconocidos recibieron premios del Municipio y acreditaciones para participar en eventos internacionales donde representarán a la Argentina.
                     </p>
                 </article>
-                <div><img src="img/ferianoticia.jpg" class="imagen-noticia" alt="Feria de tecnologías para la inclusión"></div>
+                <!-- CARRUSEL BOOTSTRAP -->
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                    <!-- INDICADORES -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    </div>
+                    <!-- IMAGENES -->
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="4000">
+                            <img src="img/ferianoticia3.jpg" class="d-block w-100 imagen-noticia" alt="Feria de Tecnologías para la Inclusión - realidad virtual">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="4000">
+                            <img src="img/ferianoticia.jpg" class="d-block w-100 imagen-noticia" alt="Feria de Tecnologías para la Inclusión - escaner 3d">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="4000">
+                            <img src="img/ferianoticia2.jpg" class="d-block w-100 imagen-noticia" alt="Feria de Tecnologías para la Inclusión - robot arduino">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="4000">
+                            <img src="img/ferianoticia4.jpg" class="d-block w-100 imagen-noticia" alt="Feria de Tecnologías para la Inclusión">
+                      </div>
+                    </div>
+                    <!-- FLECHAS -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </div>
             </div>
         </section>
 
