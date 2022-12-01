@@ -22,6 +22,10 @@
     #registro_boton{
         margin-bottom: 10px;
     }
+    .galeria img{
+        width: 250px;
+        height: 220px;
+    }
     .preguntas_frecuentes-contenedor{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -81,6 +85,14 @@
         flex-direction: column;
         align-items: center;      
     }
+    .preguntas_frecuentes-contenedor{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .h3_preguntas p{
+        text-align: center;
+    }
 }
 
 /*600PX*/
@@ -135,11 +147,6 @@
 
 /*512PX*/
 @media screen and (max-width: 512px){
-    .preguntas_frecuentes-contenedor{
-        display: grid;
-        grid-template-columns: 1fr;
-        justify-items: center;
-    }
     .h3_preguntas p{
         width: 250px;
     }

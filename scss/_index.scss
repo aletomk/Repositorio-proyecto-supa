@@ -25,6 +25,7 @@ section div{
 .mapa-noticia{
     @extend .imagen-noticia;
     width: 600px;
+    border-radius: 4px;
 }
 
 .carousel{

@@ -35,9 +35,13 @@ h3 {
   text-decoration: underline;
 }
 
-p {
+p, figcaption {
   font-family: "Aleo", serif;
   line-height: 1.4;
+}
+
+figcaption {
+  text-align: center;
 }
 
 a {
@@ -60,6 +64,7 @@ nav {
 
 img {
   max-width: 100%;
+  border-radius: 4px;
 }
 
 /*HEADER*/
@@ -213,6 +218,7 @@ footer {
   grid-area: main;
   margin: 20px 20px 0 20px;
   display: grid;
+  align-items: center;
 }
 
 /*EVENTOS*/
@@ -240,7 +246,7 @@ footer {
   margin: 0 0 30px 0;
 }
 
-section p {
+section p, section figcaption {
   text-align: justify;
 }
 
@@ -260,6 +266,7 @@ section div {
 
 .mapa-noticia {
   width: 600px;
+  border-radius: 4px;
 }
 
 .carousel {
@@ -299,16 +306,16 @@ section div {
   text-align: justify;
   margin-top: 8px;
 }
-.h3_novedad p {
+.h3_novedad p, .h3_novedad figcaption {
   margin-right: 5px;
 }
 
-#quienes_somos p {
+#quienes_somos p, #quienes_somos figcaption {
   margin-top: 10px;
 }
 
 .galeria img {
-  width: 250px;
+  width: 300px;
   height: 250px;
 }
 
@@ -328,18 +335,26 @@ section div {
 
 .preguntas_frecuentes-contenedor {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 .preguntas_frecuentes-contenedor div {
   padding-left: 15px;
 }
 
 .h3_preguntas {
-  text-align: justify;
+  text-align: center;
   margin-top: 7px;
+  text-decoration: none;
 }
-.h3_preguntas p {
+.h3_preguntas p, .h3_preguntas figcaption {
   margin-right: 5px;
+}
+
+.link_preguntas {
+  text-decoration: underline;
+}
+.link_preguntas:hover {
+  color: #E7BB41;
 }
 
 .eventos_div {
@@ -356,6 +371,7 @@ section div {
 .eventos_calendario {
   max-width: 100%;
   border: 1px solid #777;
+  border-radius: 4px;
   width: 400px;
   height: 350px;
 }
@@ -441,13 +457,17 @@ input {
   #registro_boton {
     margin-bottom: 10px;
   }
+  .galeria img {
+    width: 250px;
+    height: 220px;
+  }
   .preguntas_frecuentes-contenedor {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     width: 100%;
   }
-  .h3_preguntas p {
+  .h3_preguntas p, .h3_preguntas figcaption {
     width: 400px;
   }
   .formulario_section {
@@ -497,6 +517,14 @@ input {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .preguntas_frecuentes-contenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .h3_preguntas p, .h3_preguntas figcaption {
+    text-align: center;
   }
 }
 /*600PX*/
@@ -549,12 +577,7 @@ input {
 }
 /*512PX*/
 @media screen and (max-width: 512px) {
-  .preguntas_frecuentes-contenedor {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
-  }
-  .h3_preguntas p {
+  .h3_preguntas p, .h3_preguntas figcaption {
     width: 250px;
   }
 }

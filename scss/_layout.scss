@@ -55,6 +55,7 @@
 #preguntas_frecuentes{
     @include estilos-layout;
     display: grid;
+    align-items: center;
 }
 
 /*EVENTOS*/
