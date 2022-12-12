@@ -145,7 +145,7 @@ footer {
   color: #FAF9F5;
   background-color: #474C4E;
   width: 100%;
-  height: 70px;
+  height: 80px;
   padding-bottom: 8px;
 }
 
@@ -267,6 +267,7 @@ section div {
 .imagen-noticia, .mapa-noticia {
   height: 350px;
   margin: 0 auto;
+  border-radius: 0;
 }
 
 .mapa-noticia {
