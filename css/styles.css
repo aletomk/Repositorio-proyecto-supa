@@ -14,6 +14,7 @@ h1 {
   text-transform: uppercase;
   letter-spacing: 2px;
   text-align: center;
+  margin-bottom: 0;
 }
 
 h2 {
@@ -33,15 +34,19 @@ h3 {
   font-weight: bold;
   text-align: center;
   text-decoration: underline;
+  margin-bottom: 20px;
+  margin-top: 10px;
 }
 
 p, figcaption {
   font-family: "Aleo", serif;
+  font-size: 18px;
   line-height: 1.4;
 }
 
 figcaption {
   text-align: center;
+  font-size: 16px;
 }
 
 a {
@@ -311,7 +316,7 @@ section div {
 }
 
 #quienes_somos p, #quienes_somos figcaption {
-  margin-top: 10px;
+  margin: 10px 20px 25px 20px;
 }
 
 .galeria img {
@@ -338,7 +343,7 @@ section div {
   grid-template-columns: repeat(3, 1fr);
 }
 .preguntas_frecuentes-contenedor div {
-  padding-left: 15px;
+  padding-left: 0;
 }
 
 .h3_preguntas {
@@ -394,6 +399,10 @@ section div {
   background-size: 40px;
 }
 
+:placeholder-shown {
+  border: 2px solid #E7BB41;
+}
+
 input {
   margin-left: 10px;
 }
@@ -403,8 +412,8 @@ input {
 }
 
 .h3_registro {
-  text-align: justify;
-  margin: 8px 0 0 0;
+  text-align: center;
+  margin: 15px 0 15px 0;
 }
 
 .icono_registro {
@@ -432,6 +441,14 @@ input {
 
 .row {
   flex-wrap: nowrap;
+}
+
+.form-control:focus {
+  color: #E7BB41;
+}
+
+.beneficios p, .beneficios figcaption {
+  margin: 10px 15px 0 15px;
 }
 
 /*1200 PX*/
@@ -466,6 +483,7 @@ input {
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     width: 100%;
+    margin: 0 auto;
   }
   .h3_preguntas p, .h3_preguntas figcaption {
     width: 400px;

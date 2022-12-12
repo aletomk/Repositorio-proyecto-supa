@@ -1,5 +1,9 @@
+:placeholder-shown{
+    border: 2px solid $bg-hover;
+}
+
 input{
-    margin-left: 10px;
+    margin-left: 10px; 
 }
 
 #siguiente{
@@ -7,8 +11,8 @@ input{
 }
 
 .h3_registro{
-    text-align: justify;
-    margin: 8px 0 0 0;
+    text-align: center;
+    margin: 15px 0 15px 0;
 }
 
 .icono_registro{
@@ -38,3 +42,10 @@ input{
     flex-wrap: nowrap;
 }
 
+.form-control:focus{
+        color: $bg-hover;
+}
+
+.beneficios p{
+    margin: 10px 15px 0 15px;
+}
