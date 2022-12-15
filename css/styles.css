@@ -286,7 +286,7 @@ section div {
 }
 
 .icono_noticias {
-  background-image: url(../img/pc-icono.png);
+  background-image: url(../img/pc-icono.webp);
   background-repeat: no-repeat;
   background-position: 800px;
   background-size: 40px;
@@ -326,14 +326,14 @@ section div {
 }
 
 .icono_quienes-somos {
-  background-image: url(../img/personas-icono.png);
+  background-image: url(../img/personas-icono.webp);
   background-repeat: no-repeat;
   background-position: 800px;
   background-size: 40px;
 }
 
 .icono_preguntas {
-  background-image: url(../img/preguntas-icono.png);
+  background-image: url(../img/preguntas-icono.webp);
   background-repeat: no-repeat;
   background-position: 850px;
   background-size: 45px;
@@ -394,7 +394,7 @@ section div {
 }
 
 .icono_eventos {
-  background-image: url(../img/calendario-icono.png);
+  background-image: url(../img/calendario-icono.webp);
   background-repeat: no-repeat;
   background-position: 830px;
   background-size: 40px;
@@ -418,14 +418,14 @@ input {
 }
 
 .icono_registro {
-  background-image: url(../img/registro-icono.png);
+  background-image: url(../img/registro-icono.webp);
   background-repeat: no-repeat;
   background-position: 915px;
   background-size: 38px;
 }
 
 .icono_usuario {
-  background-image: url(../img/usuario-icono.png);
+  background-image: url(../img/usuario-icono.webp);
   background-repeat: no-repeat;
   background-position: 290px;
   background-size: 38px;
@@ -433,7 +433,7 @@ input {
 }
 
 .icono_nuevo-usuario {
-  background-image: url(../img/nuevo_usuario-icono.png);
+  background-image: url(../img/nuevo_usuario-icono.webp);
   background-repeat: no-repeat;
   background-position: 275px;
   background-size: 43px;
